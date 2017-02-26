@@ -52,7 +52,7 @@ var updateItem = function(state, itemIndex, newItem) {
 
 // render item and list
 
-var renderItem = function(state, itemId, itemTemplate, itemDataAttr) {
+var renderItem = function(item, itemId, itemTemplate, itemDataAttr) {
 	var element = $(itemTemplate);
 	element.find('.js-shopping-item').text(item.itemName);
 
